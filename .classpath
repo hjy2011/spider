@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/commons-beanutils-1.8.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/commons-httpclient-3.1-rc1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/commons-lang-2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/commons-logging-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/ezmorph-1.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/gdata-client-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/gdata-core-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/httpclient-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/httpclient-cache-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/httpcore-4.1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/httpmime-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/jedis-2.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/json-lib-2.4-jdk15.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/mongo-2.10.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/mongo-java-driver-2.11.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/mongo-java-driver-2.11.1-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/oauth-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/org.apache.httpcomponents.httpclient_4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/org.json-20120521.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/Java/jdk1.7.0_07/lib/bohong/sqljdbc4.jar"/>
+	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/filterbuilder.jar"/>
+	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/htmllexer.jar"/>
+	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/htmlparser.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/E:/资料/java包/HTMLParser-2.0/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/sitecapturer.jar"/>
+	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/thumbelina.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
