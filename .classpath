@@ -33,5 +33,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/sitecapturer.jar"/>
 	<classpathentry exported="true" kind="lib" path="G:/TDDOWNLOAD/HTMLParser-2.0-SNAPSHOT-bin/HTMLParser-2.0-SNAPSHOT/lib/thumbelina.jar"/>
+	<classpathentry kind="lib" path="F:/jy_1/Spider/mylib/mysql-connector-java-5.1.25-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

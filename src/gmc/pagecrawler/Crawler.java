@@ -67,10 +67,11 @@ public class Crawler {
      *
      * @param url 待爬取的url
      * @return content 爬取返回的源代码
+     * @throws HttpException 
      * @throws InterruptedException 
      * @throws IOException 
      */
-	public String crawler(String url){
+	public String crawler(String url) throws HttpException, IOException{
 		/* 1 生成 HttpClinet 对象并设置参数 */
 		HttpClient httpClient = new HttpClient();
 		// 设置 Http 连接超时为5秒
@@ -86,46 +87,30 @@ public class Crawler {
 				new DefaultHttpMethodRetryHandler());
 		StringBuilder sb = new StringBuilder();
 		/* 3 执行 HTTP GET 请求 */
-		try {
-			int statusCode = httpClient.executeMethod(getMethod);
-			/* 4 判断访问的状态码 */
-			if (statusCode != HttpStatus.SC_OK) {
-				System.err.println("Method failed: "
-						+ getMethod.getStatusLine());
-			}
-
-			/* 5 处理 HTTP 响应内容 */
-			// HTTP响应头部信息，这里简单打印
-
-			// 读取为 InputStream，在网页内容数据量大时候推荐使用
-			InputStream response = getMethod.getResponseBodyAsStream();
-			
-			InputStreamReader ir = new InputStreamReader(response, chartset);
-			BufferedReader br = new BufferedReader(ir);
-			
-			String temp = null;
-			while ((temp = br.readLine()) != null) {
-				sb.append(temp);
-				//增加换行符会影响正则匹配的效果。
-				//sb.append("\n");
-			}
-		} catch (HttpException e) {
-			// 发生致命的异常，可能是协议不对或者返回的内容有问题
-			System.out.println("Please check your provided http address!");
-			e.printStackTrace();
-		} catch (IOException e) {
-			// 发生网络异常
-			System.out.println("time out");
-			e.printStackTrace();
-		} catch(Exception e)
-		{
-			e.printStackTrace();
-			System.out.println(url+"爬取失败");
+		
+		int statusCode = httpClient.executeMethod(getMethod);
+		/* 4 判断访问的状态码 */
+		if (statusCode != HttpStatus.SC_OK) {
+			System.err.println("Method failed: "
+					+ getMethod.getStatusLine());
 		}
-		finally {
-			/* 6 .释放连接 */
-			getMethod.releaseConnection();
+
+		/* 5 处理 HTTP 响应内容 */
+		// HTTP响应头部信息，这里简单打印
+
+		// 读取为 InputStream，在网页内容数据量大时候推荐使用
+		InputStream response = getMethod.getResponseBodyAsStream();
+		
+		InputStreamReader ir = new InputStreamReader(response, chartset);
+		BufferedReader br = new BufferedReader(ir);
+		
+		String temp = null;
+		while ((temp = br.readLine()) != null) {
+			sb.append(temp);
+			//增加换行符会影响正则匹配的效果。
+			//sb.append("\n");
 		}
+		
 		
 		
 		return sb.toString();
