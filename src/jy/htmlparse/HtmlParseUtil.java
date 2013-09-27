@@ -17,6 +17,10 @@ public class HtmlParseUtil {
 	
 	/**
 	 * 获取规定标签及属性的内容
+	 * 使用示例:
+	 * HtmlParseUtil.getContentByTagNameAndAttribute(sourse, "div", "class", "hello");
+	 * 会获取所有div节点，并且该节点具有属性class="hello"
+	 * 
 	 * @param sourse
 	 * @param tagName
 	 * @param attribute
@@ -38,8 +42,7 @@ public class HtmlParseUtil {
 				String text = nodeList.elementAt(i).toHtml();
 				list.add(text);
 			}
-				
-			
+
 		} catch (ParserException e) {
 			e.printStackTrace();
 		}
